@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=UA-109175497-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-109175497-1');
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start' : new Date().getTime(),
+			event : 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l='
+				+ l
+				: '';
+		j.async = true;
+		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-K9CX8T9');
+</script>
+<!-- End Google Tag Manager -->
+
+<title>Roni Chabra Resume & Protfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Roni Chabra Protfolio & Resume" />
+<link rel="icon" href="images/icon.png">
+
+<!-- CSS  -->
+<link
+	href="https://fonts.googleapis.com/css?family=Oleo+Script|Roboto|Material+Icons"
+	rel="stylesheet">
+	
+<link href="css/materialize.css" type="text/css" rel="stylesheet"
+	media="screen,projection" />
+
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+
+
+</head>
+<body id="body" class="scrollspy">
+
+
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9CX8T9"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    
+  <script>
+  /**
+   * Handler for the signin callback triggered after the user selects an account.
+   */
+  function onSignInCallback(resp) {
+    gapi.client.load('plus', 'v1', apiClientLoaded);
+  }
+
+  /**
+   * Sets up an API call after the Google API client loads.
+   */
+  function apiClientLoaded() {
+    gapi.client.plus.people.get({userId: 'me'}).execute(handleEmailResponse);
+  }
+
+  /**
+   * Response callback for when the API client receives a response.
+   *
+   * @param resp The API response object with the user email and profile information.
+   */
+  function handleEmailResponse(resp) {
+    var primaryEmail;
+    for (var i=0; i < resp.emails.length; i++) {
+      if (resp.emails[i].type === 'account') primaryEmail = resp.emails[i].value;
+    }
+    document.getElementById('responseContainer').value = 'Primary email: ' +
+        primaryEmail + '\n\nFull Response:\n' + JSON.stringify(resp);
+  }
+
+  </script>
+    
+    
+	<!-- NAV -->
+	<nav role="navigation">
+		<div class="nav-wrapper container">
+			<ul id="nav-mobile" class="side-nav ">
+				<li><div class="user-view">
+						<div class="background">
+							<img src="images/office.jpg">
+						</div>
+						<img class="circle" src="images/me.jpg">
+						<span class="black-text name">Roni Chabra</span> <span
+							class="black-text email">Resume and Protfolio</span>
+					</div></li>
+
+
+				<li><a href="#secondSection"
+						class="header  grey-text darken-4 waves-effect
+					">
+						<i class="small fa fa-info-circle" aria-hidden="true"></i> Info
+					</a></li>
+				<li><div class="divider"></div></li>
+				<li><a href="#protfolio"
+						class="header  grey-text darken-4 waves-effect
+					">
+						<i class="small fa fa-suitcase" aria-hidden="true"></i>Protfolio
+					</a></li>
+				<li><div class="divider"></div></li>
+				<li><a href="#contact"
+						class="header  grey-text darken-4 waves-effect
+					">
+						<i class="small fa fa-comments-o"></i>Contact
+					</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse">
+				<i class="material-icons">menu</i>
+			</a>
+		</div>
+	</nav>
+	<!-- FIRST SECTION -->
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot no-pad-top">
+			<div class="container">
+				<h1 class="headerTitle center text-color3 animated  bounceInDown">Roni
+					Chabra</h1>
+				<h2
+					class="headerEngineer center  text-color4 animated  bounceInDown">Software
+					Engineer</h2>
+				<div class="row center">
+					<h5 class="headerInfo col s12 text-color5 animated  bounceInDown">A
+						modern responsive front-end developer</h5>
+
+
+					<ul class="headerIcons animated bounceInDown">
+						<li><a target="_blank"
+								href="https://www.linkedin.com/in/roni-chabra-61698558"
+								class="fa fa-linkedin "></a></li>
+						<li><a href="https://www.facebook.com/roni6ch"
+								target="_blank" class="fa fa-facebook"></a></li>
+						<li><a href="tel:+972502560005" class="fa fa-phone"></a></li>
+						<li><a href="#contactForm" target="_blank"
+								class="fa fa-envelope-o"></a></li>
+					</ul>
+
+
+				</div>
+				<!-- Resume -->
+				<div class="resumeButtons row center animated bounceIn">
+					<a
+						class="resumeButtons waves-light  lighten-1 z-depth-5 black-text btn color4"
+						href="files/Roni Chabra - Resume EN.docx">English Resume</a>
+					<a
+						class="resumeButtons waves-light  lighten-1 z-depth-5 black-text btn color4"
+						href="files/Roni Chabra - Resume.docx">Hebrew Resume</a>
+
+				</div>
+				<br> <br>
+
+			</div>
+		</div>
+		<div class="parallax">
+			<img src="images/background2.jpg" alt="Unsplashed background img 1">
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- SECOND SECTION -->
+	<div
+		class="scrollDown card-panel hoverable center hide-on-med-and-down">
+		<a href="#protfolio">
+			<i class="fa fa-chevron-down fa-2x " aria-hidden="true"></i>
+		</a>
+	</div>
+
+
+	<div class="container">
+		<div class="section secondSection scrollspy" id="secondSection">
+
+			<!--   Icon Section   -->
+			<div class="row">
+				<div class="col s12 m4 ">
+					<div class="icon-block">
+						<h2 class="center">
+							<img src="images/icon1.png" class="animated pulse"/>
+						</h2>
+						<h5 class="center">Responsive Web Sites</h5>
+
+						<p class="light">Get your Responsive Landing page for all
+							devices within a week.</p>
+					</div>
+				</div>
+
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center orange-text">
+							<img src="images/icon2.png"  class="animated pulse"/>
+						</h2>
+						<h5 class="center">User Experience Focused</h5>
+
+						<p class="light">By using the principles of Material Design,
+							I'm able to create a framework that incorporates components and
+							animations that provide more feedback to users.</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center">
+							<img src="images/icon3.png" class="animated pulse"/>
+						</h2>
+						<h5 class="center">From scratch to 100%</h5>
+
+						<p class="light">Include's web site domain, DB and hosting
+							server.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- THIRD SECTION -->
+	<div class="parallax-container valign-wrapper scrollspy" id="protfolio">
+		<div class="iphoneWrapper section no-pad-bot center">
+			<div class="container">
+				<div class="row valign-wrapper">
+					<h5 class="col s6 header light hide-on-med-and-down valign" style="color:#fff;">A
+						modern responsive front-end framework based on Material Design</h5>
+					<!-- SLIDER -->
+
+					<div class="col s12 iphoneSection ">
+					
+					<a href="javascript:$('.carousel').carousel('next');"><i class="fa fa-angle-right fa-2x rightCarousel" aria-hidden="true"  ></i></a>
+					<a href="javascript:$('.carousel').carousel('prev');"><i class="fa fa-angle-left fa-2x leftCarousel" aria-hidden="true" ></i></a>
+
+						<div class="carousel carousel-slider center" id="carousel"
+							data-indicators="true">
+							<!-- <img src="images/hand.gif" class="hand"/> -->
+							<div class="carousel-fixed-item center">
+								<a
+									class="btn  waves-light  lighten-1 z-depth-5 black-text enter">Enter</a>
+							</div>
+
+							<!-- IMAGES -->
+							<!-- CV MATCHER -->
+							<div class="carousel-item   white-text">
+								<a class="carouselImageWrapper cvmatcher"
+									href="http://cvmatcher.esy.es/#/search-jobs" target="_blank">
+									<div class="carouselInfo hide-on-med-and-down">
+										<h2>CV Matcher</h2>
+										<p class="white-text">Match between job seekers and
+											employers.</p>
+									</div>
+								</a>
+							</div>
+<!-- mapmap -->
+							<div class="carousel-item  white-text">
+								<a class="carouselImageWrapper mapmap"
+									href="http://roni.pe.hu/mapmap6/" target="_blank">
+									<div class="carouselInfo hide-on-med-and-down">
+										<h2>find your Home!</h2>
+										<p class="white-text">find your next house on map</p>
+									</div>
+								</a>
+							</div>	
+							<!-- CART -->
+							<div class="carousel-item  white-text">
+								<a class="carouselImageWrapper cart"
+									href="http://roni6ch.github.io/" target="_blank">
+									<div class="carouselInfo hide-on-med-and-down">
+										<h2>Basket Price</h2>
+										<p class="white-text">Calcalist project - calculate
+											average income throw the years VS grocery basket</p>
+									</div>
+								</a>
+							</div>
+
+							<!-- Love Hearts -->
+							<div class="carousel-item  white-text">
+								<a class="carouselImageWrapper lovehearts"
+									href="https://www.loveheartsbingo.com/" target="_blank">
+									<div class="carouselInfo hide-on-med-and-down">
+										<h2>LoveHearts Bingo</h2>
+										<p class="white-text">One of my works for 888 Bingo
+											Company.</p>
+									</div>
+								</a>
+							</div>
+							<!-- VALENTINES -->
+							<div class="carousel-item  white-text">
+								<a class="carouselImageWrapper valentines"
+									href="http://roni.pe.hu/v2018B" target="_blank">
+									<div class="carouselInfo hide-on-med-and-down">
+										<h2>Valentine's Day</h2>
+										<p class="white-text">4 my love</p>
+									</div>
+								</a>
+							</div>
+							<!-- BARBER -->
+							<div class="carousel-item  white-text">
+								<a class="carouselImageWrapper barber"
+									href="http://roni.pe.hu/barber/" target="_blank">
+									<div class="carouselInfo hide-on-med-and-down">
+										<h2>Barber Shop</h2>
+										<p class="white-text">Schedule an appointment with the
+											barber online</p>
+									</div>
+								</a>
+							</div>
+							
+							<!-- biungo and beyond -->
+							<div class="carousel-item  white-text">
+								<a class="carouselImageWrapper bingoandbeyond"
+									href="https://www.bingoandbeyond.com/" target="_blank">
+									<div class="carouselInfo hide-on-med-and-down">
+										<h2>Bingo And Beyond</h2>
+										<p class="white-text">Bingo work for 888 Bingo
+											Company.</p>
+									</div>
+								</a>
+							</div>
+							
+							
+
+						</div>
+
+
+
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="parallax">
+			<img src="images/background1.jpg" alt="Unsplashed background img 2">
+		</div>
+	</div>
+	<!-- FORTH SECTION -->
+	<div class="container">
+		<div class="section">
+
+			<div class="imagination card-panel hoverable center">
+				<span><span class="orange-text text-lighten-2">"Imagination</span>
+					Is More Important Then <span class="orange-text text-lighten-2">Knowledge"</span></span>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer class="page-footer black scrollspy" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col  s12 m5  aboutme">
+					<h5 class="white-text">About me</h5>
+					<p class="grey-text text-lighten-4">
+						Hi, My Name Is Roni, <br> 
+						I am a software engineer, full
+						stack-web developer and a funny guy :)<br>
+						I am always
+						excited to explore and learn new things. <br>
+						I also love to
+						travel the world. You may check out my portfolio and view my
+						resume at this page. If you are interested of building a website
+						for your business or any other purpose, <br>please contact
+						me.
+					</p>
+
+
+				</div>
+				<!-- FORM -->
+				<div class="col  s12 m4	 contact">
+					<h5 class="white-text">Contact Me</h5>
+					<form method="post" id="contactForm" class="scrollspy" action="mail.php">
+
+						<div class="input-field col s12">
+							<i class="material-icons prefix">account_circle</i>
+							<input id="name" type="text" class="validate" data-length="20"
+								maxlength="20" name='user_name' required="" id="formUserName">
+							<label for="last_name">Full Name</label>
+						</div>
+
+						<div class="input-field col s12 ">
+							<i class="material-icons prefix">email</i>
+							<input id="email" type="email" class="validate" data-length="30"
+								maxlength="30" name='user_mail' required="">
+							<label for="email">Email</label>
+						</div>
+
+						<div class="input-field col s12">
+							<i class="material-icons prefix">mode_edit</i>
+							<textarea id="message" class="materialize-textarea validate"
+								data-length="200" maxlength="200" name='user_message'
+								required></textarea>
+							<label for="textarea1">Message</label>
+						</div>
+
+						<input type="submit" id="submitBtn" value="Send"
+							class="btn   lighten-1 z-depth-5 black-text">
+					</form>
+				</div>
+				<div class="col  m3   contactWays hide-on-small-only">
+					<div class=" social-icons">
+						<ul>
+							<li><a class="btn-large btn-floating light-blue darken-3"
+									href="https://www.linkedin.com/in/roni-chabra-61698558"
+									target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a></li>
+							<li><a class="btn-large btn-floating light-blue darken-1"
+									href="https://www.facebook.com/roni6ch" target="_blank">
+									<i class="fa fa-facebook"></i>
+								</a></li>
+							<br>
+							<li><a class="btn-large btn-floating green"
+									href="tel:+972502560005">
+									<i class="fa fa-phone"></i>
+								</a></li>
+							<li><a class="btn-large btn-floating red"
+									href="mailto:Roni691986@Gmail.com" target="_blank">
+									<i class="fa fa-envelope-o"></i>
+								</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- FIXED BOTTOM CONTACT BUTTONS -->
+	<div class="fixed-action-btn horizontal goUp">
+	<a class="btn-floating btn-large color1" href="#body">
+			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		</a>
+		</div>
+	<div class="fixed-action-btn horizontal ">
+		<a class="btn-floating btn-large color2">
+			<i class="large fa fa-comments-o"></i>
+		</a>
+		<ul>
+			<li><a class="btn-large btn-floating light-blue darken-3"
+					href="https://www.linkedin.com/in/roni-chabra-61698558"
+					target="_blank">
+					<i class="fa fa-linkedin"></i>
+				</a></li>
+			<li><a class="btn-large btn-floating light-blue darken-1"
+					href="https://www.facebook.com/roni6ch" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a></li>
+			<li><a class="btn-large btn-floating green"
+					href="tel:+972502560005">
+					<i class="fa fa-phone"></i>
+				</a></li>
+			<li><a class="btn-large btn-floating red"
+					href="mailto:Roni691986@Gmail.com" target="_blank">
+					<i class="fa fa-envelope-o"></i>
+				</a></li>
+		</ul>
+	</div>
+
+
+
+
+	<!--  Scripts-->
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
+
