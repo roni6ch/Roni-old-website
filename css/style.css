@@ -184,29 +184,32 @@ h1, h2 {
 }
 
 .cvmatcher {
-	background: url(../images/mobile/cvmatcher.png) top center no-repeat;
+	background: url(../images/mobile/cvmatcher.jpg) top center no-repeat;
 }
 
 .cart {
-	background: url(../images/mobile/cart.png) top center no-repeat;
+	background: url(../images/mobile/cart.jpg) top center no-repeat;
 }
 
 .lovehearts {
-	background: url(../images/mobile/lovehearts.png) top center no-repeat;
+	background: url(../images/mobile/lovehearts.jpg) top center no-repeat;
 }
 
 .valentines {
-	background: url(../images/mobile/valentines.png) top center no-repeat;
+	background: url(../images/mobile/valentines.jpg) top center no-repeat;
 }
 
 .barber {
-	background: url(../images/mobile/barber.png) top center no-repeat;
+	background: url(../images/mobile/barber.jpg) top center no-repeat;
 }
 .mapmap{
-		background: url(../images/mobile/mapmap.png) top center no-repeat;
+		background: url(../images/mobile/mapmap.jpg) top center no-repeat;
 }
 .bingoandbeyond{
-		background: url(../images/mobile/beyond.png) top center no-repeat;
+		background: url(../images/mobile/beyond.jpg) top center no-repeat;
+}
+.spontanious{
+	background: url(../images/mobile/spontanious.jpg) top center no-repeat;
 }
 
 .carousel-item:hover .carouselInfo {
